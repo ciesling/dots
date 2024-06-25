@@ -26,3 +26,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
 keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<CR>", { desc = "Toggle transparent background"})
+keymap.set("n", "<leader>ch", ":CopilotChatToggle<CR>", { desc = "Open copilot chat" })
+keymap.set("n", "<leader>xx", ":q<CR>", { desc = "Close window" })
+keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Close window" })
+keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>", { desc = "Open copilot chat" })

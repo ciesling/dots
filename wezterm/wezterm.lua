@@ -5,7 +5,7 @@ local config = {}
 --> Settings <--
 ----------------
 config.font = wezterm.font({ family = "Operator Mono Lig" })
-config.font_size = 19
+config.font_size = 16
 config.window_background_opacity = 0.75
 config.text_background_opacity = 1.0
 config.adjust_window_size_when_changing_font_size = false
@@ -14,7 +14,9 @@ config.cursor_blink_ease_in = "Linear"
 config.cursor_blink_ease_out = "Linear"
 config.cursor_blink_rate = 1100
 config.window_decorations = "RESIZE"
-config.default_cursor_style = "BlinkingUnderline"
+config.default_cursor_style = "BlinkingBar"
+config.cursor_thickness = "2px"
+config.cursor_blink_rate = 750
 config.automatically_reload_config = true
 config.enable_tab_bar = false
 config.audible_bell = "Disabled"

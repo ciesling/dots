@@ -4,6 +4,7 @@ local keymap = vim.keymap
 
 --> fast way to escape insert mode
 keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode with jj" })
+keymap.set('n', 'S', ':%s/', {noremap = true})
 
 --> write and quit files
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save file" })
@@ -26,7 +27,4 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
 keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<CR>", { desc = "Toggle transparent background"})
-keymap.set("n", "<leader>ch", ":CopilotChatToggle<CR>", { desc = "Open copilot chat" })
-keymap.set("n", "<leader>xx", ":q<CR>", { desc = "Close window" })
-keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Close window" })
-keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>", { desc = "Open copilot chat" })
+keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<CR>", { desc = "Toggle Copilot Chat"})

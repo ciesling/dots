@@ -1,39 +1,41 @@
-vim.cmd("let g:netrw_liststyle = 3")
-
 local opt = vim.opt
 
 opt.relativenumber = true
 opt.number = true
 
---> tabs & indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
+opt.softtabstop = 2
+opt.smartindent = true
 opt.autoindent = true
-
 opt.wrap = false
 
---> search settings
+opt.incsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 
 opt.cursorline = true
-
---> turn on termguicolors for colorschemes to work
+opt.scrolloff = 10
 opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
+opt.hidden = true
+opt.errorbells = false
+opt.swapfile = false
+opt.backup = false
+opt.splitright = true
+opt.splitbelow = true
+opt.modifiable = true
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 99
+opt.guicursor =
+	"n-v-c:block,i-ci-ve:block,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
---> backspace
 opt.backspace = "indent,eol,start"
 
---> clipboard
 opt.clipboard:append("unnamedplus")
 
---> split windows
 opt.splitright = true
 opt.splitbelow = true
 
---> swap files
-opt.swapfile = false
 opt.undofile = true

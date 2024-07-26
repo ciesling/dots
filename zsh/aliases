@@ -1,0 +1,25 @@
+alias c='z'
+alias hypr='cd ~/.config/hypr'
+alias wez='cd ~/.config/wezterm'
+alias config='cd ~/.config'
+alias pac='sudo pacman -Syyu --needed --noconfirm'
+alias pp='paru -S --needed --noconfirm'
+alias nv='cd ~/.config/nvim'
+alias config='cd ~/.config'
+alias zz='cd ~/.config/zsh && nvim .zshrc'
+alias lh="eza -l --color=always --icons --group-directories-first --octal-permissions --no-permissions"
+alias lah="eza -al --color=always --icons --group-directories-first --octal-permissions --no-permissions"
+alias ls="eza --color=always --icons --group-directories-first"
+alias las="eza -a --color=always --icons --group-directories-first"
+alias lt="eza -aT --color=always --icons --group-directories-first"
+alias myals="cat ~/.config/zsh/aliases"
+alias v='vim'
+alias key='cat ~/.local/github/key'
+alias ginit='cat ~/.local/github/ginit'
+alias tm='cd ~/.config/tmux'
+alias lc='~/.local'
+alias sf='sudo setfont'
+alias cc='clear'
+alias ll='ls -l'
+alias restartshell='source ~/.config/zsh/.zshrc'
+alias rs='source ~/.config/zsh/.zshrc'
